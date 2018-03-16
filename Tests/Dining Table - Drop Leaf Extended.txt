@@ -1,0 +1,132 @@
+;
+; Dining Table - Drop Leaf
+;
+; Saved: 2016-10-23 18:31:40
+;
+
+; Design object name
+OBJECTNAME=Dining Table - Drop Leaf
+
+; Measurements to be displayed
+MEASURE=UNDEFINED
+
+; Individual design elements (parts)
+
+; Design element object: Top 1
+OBJECTSTART=Rect
+	NAME=Top 1
+	DIMENSIONS=25.75,38.25,0.75
+	MIDPOINT=-20.875,0,15
+OBJECTEND=
+
+; Design element object: Top 2
+OBJECTSTART=Rect
+	NAME=Top 2
+	DIMENSIONS=25.75,38.25,0.75
+	MIDPOINT=20.875,0,15
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=3,2.5,29.25
+	ATTACH=E-0,E+0,E+0,"Top 1",E-5,E+4,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=3,2.5,29.25
+	ATTACH=E+0,E+0,E+0,"Top 2",E+5,E+4,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=3,2.5,29.25
+	ATTACH=E-0,E-0,E+0,"Top 1",E-5,E-4,E-0
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=3,2.5,29.25
+	ATTACH=E+0,E-0,E+0,"Top 2",E+5,E-4,E-0
+OBJECTEND=
+
+; Design element object: Top 1 Y Plus
+OBJECTSTART=Rect
+	NAME=Top 1 Y Plus
+	DIMENSIONS=17.75,1.5,2.5
+	ATTACH=E-0,E+0,E+0,"Top 1",E-8,E+4,E-0
+OBJECTEND=
+
+; Design element object: Top 1 Y Minus
+OBJECTSTART=Rect
+	NAME=Top 1 Y Minus
+	DIMENSIONS=17.75,1.5,2.5
+	ATTACH=E-0,E-0,E+0,"Top 1",E-8,E-4,E-0
+OBJECTEND=
+
+; Design element object: Top 2 Y Plus
+OBJECTSTART=Rect
+	NAME=Top 2 Y Plus
+	DIMENSIONS=17.75,1.5,2.5
+	ATTACH=E+0,E+0,E+0,"Top 2",E+8,E+4,E-0
+OBJECTEND=
+
+; Design element object: Top 2 Y Minus
+OBJECTSTART=Rect
+	NAME=Top 2 Y Minus
+	DIMENSIONS=17.75,1.5,2.5
+	ATTACH=E+0,E-0,E+0,"Top 2",E+8,E-4,E-0
+OBJECTEND=
+
+; Design element object: Top 1 X Minus
+OBJECTSTART=Rect
+	NAME=Top 1 X Minus
+	DIMENSIONS=1.5,25.25,2.5
+	ATTACH=E-0,E+0,E+0,"Top 1",E-5,E+6.5,E-0
+OBJECTEND=
+
+; Design element object: Top 2 X Plus
+OBJECTSTART=Rect
+	NAME=Top 2 X Plus
+	DIMENSIONS=1.5,25.25,2.5
+	ATTACH=E+0,E+0,E+0,"Top 2",E+5,E+6.5,E-0
+OBJECTEND=
+
+; Design element object: Top 1 Y Plus Interior Slide
+OBJECTSTART=Rect
+	NAME=Top 1 Y Plus Interior Slide
+	DIMENSIONS=35.5,1.5,2.5
+	ATTACH=E-0,E+0,E+0,"Top 1",E-8,E+5.5,E-0
+OBJECTEND=
+
+; Design element object: Top 2 Y Plus Interior Slide
+OBJECTSTART=Rect
+	NAME=Top 2 Y Plus Interior Slide
+	DIMENSIONS=35.5,1.5,2.5
+	ATTACH=E+0,E-0,E+0,"Top 2",E+8,E-5.5,E-0
+OBJECTEND=
+
+; Design element object: Drop Leaf
+OBJECTSTART=Rect
+	NAME=Drop Leaf
+	DIMENSIONS=16,38.25,0.75
+	MIDPOINT=0,0,15
+OBJECTEND=
+
+; Design element object: Drop Leaf Y Plus
+OBJECTSTART=Rect
+	NAME=Drop Leaf Y Plus
+	DIMENSIONS=16,1.5,2.5
+	ATTACH=M-0,E+0,E+0,"Drop Leaf",M-0,E+4,E-0
+OBJECTEND=
+
+; Design element object: Drop Leaf Y Minus
+OBJECTSTART=Rect
+	NAME=Drop Leaf Y Minus
+	DIMENSIONS=16,1.5,2.5
+	ATTACH=M-0,E-0,E+0,"Drop Leaf",M-0,E-4,E-0
+OBJECTEND=

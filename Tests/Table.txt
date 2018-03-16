@@ -1,0 +1,80 @@
+;
+; Table Example File
+;
+
+; Object name
+OBJECTNAME=Table
+
+; Measurements to be displayed as inches
+MEASURE=INCH
+
+; Individual objects are defined as follows:
+;OBJECTSTART=RECT			Start of object definition, including type of object--for now RECT, which defines a rectangular parallelepiped, is the only type supported
+;	NAME=OBJECT NAME		Name of the object being created
+;	DIMENSIONS=48,24,1.5	Object dimensions--will be type specific, for RECT midpoint calculation, it is assumed X,Y,Z
+;	MIDPOINT=0,0,14			Midpoint for rect where all planes lie parallel to the XY, YZ and XZ planes
+;	POSITION=-24,-12,26.5	Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=24,-12,26.5	Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=24,12,26.5		Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=-24,12,26.5	Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=-24,-12,28		Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=24,-12,28		Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=24,12,28		Position in 3D space--will be type specific, RECT requires 8
+;	POSITION=-24,12,28		Position in 3D space--will be type specific, RECT requires 8
+;	ATTACH=E+D,E+D,E+D,"Top",E-1,E-D,E-1
+;							Attachment location relative to another object
+;							Parameters are:  own X,own Y,own Z,object name,object X,object Y,object Z
+;								where X,Y,Z are defined as "LOV"
+;								L = location, one of "E" for edge or "M" for midpoint
+;								O = offset type, one of "-" or "+" for +/- dimension coordinates
+;									ie:
+;										for edge type indicates the value is relative to the -X/Y/Z edge or +X/Y/Z edge
+;										for midpoint type this is the sign of the value specified by V
+;								V = value, one of either the dimension letter (D) for using the max dimension edge value
+;									or an actual value relative to the location; for midpoint locations, a dimension letter
+;									is shorthand for the dimension edge
+;OBJECTEND=					End of object definition
+
+; Top piece
+OBJECTSTART=RECT
+	NAME=Top
+	DIMENSIONS=48,24,1.5
+	MIDPOINT=0,0,14
+	;POSITION=-24,-12,13.25
+	;POSITION=24,-12,13.25
+	;POSITION=24,12,13.25
+	;POSITION=-24,12,13.25
+	;POSITION=-24,-12,14.75
+	;POSITION=24,-12,14.75
+	;POSITION=24,12,14.75
+	;POSITION=-24,12,14.75
+OBJECTEND=
+
+; Leg 1
+OBJECTSTART=RECT
+	NAME=Leg 1
+	DIMENSIONS=1.5,1.5,26.5
+	MIDPOINT=23.25,11.25,0
+OBJECTEND=
+
+; Leg 2
+OBJECTSTART=RECT
+	NAME=Leg 2
+	DIMENSIONS=1.5,1.5,26.5
+	MIDPOINT=-23.25,11.25,0
+OBJECTEND=
+
+; Leg 3
+OBJECTSTART=RECT
+	NAME=Leg 3
+	DIMENSIONS=1.5,1.5,26.5
+	MIDPOINT=-23.25,-11.25,0
+OBJECTEND=
+
+; Leg 4
+OBJECTSTART=RECT
+	NAME=Leg 4
+	DIMENSIONS=1.5,1.5,26.5
+	MIDPOINT=23.25,-11.25,0
+OBJECTEND=
+

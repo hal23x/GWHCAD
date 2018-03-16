@@ -1,0 +1,76 @@
+;
+; Dining Table
+;
+; Saved: 2016-10-19 14:21:55
+;
+
+; Design object name
+OBJECTNAME=Dining Table
+
+; Measurements to be displayed
+MEASURE=UNDEFINED
+
+; Individual design elements (parts)
+
+; Design element object: Top
+OBJECTSTART=Rect
+	NAME=Top
+	DIMENSIONS=65,45,0.75
+	MIDPOINT=0,0,17
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=2.5,2.5,34
+	ATTACH=E+0,E+0,E+0,"Top",E+4,E+4,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=2.5,2.5,34
+	ATTACH=E+0,E-0,E+0,"Top",E+4,E-4,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=2.5,2.5,34
+	ATTACH=E-0,E+0,E+0,"Top",E-4,E+4,E-0
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=2.5,2.5,34
+	ATTACH=E-0,E-0,E+0,"Top",E-4,E-4,E-0
+OBJECTEND=
+
+; Design element object: Support 1
+OBJECTSTART=Rect
+	NAME=Support 1
+	DIMENSIONS=52,1.25,2.5
+	ATTACH=E+0,M+0,E+0,"Leg 1",E-0,M+0,E+0
+OBJECTEND=
+
+; Design element object: Support 2
+OBJECTSTART=Rect
+	NAME=Support 2
+	DIMENSIONS=52,1.25,2.5
+	ATTACH=E+0,M+0,E+0,"Leg 2",E-0,M+0,E+0
+OBJECTEND=
+
+; Design element object: Support 3
+OBJECTSTART=Rect
+	NAME=Support 3
+	DIMENSIONS=1.25,32,2.5
+	ATTACH=M+0,E+0,E+0,"Leg 1",M+0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Support 4
+OBJECTSTART=Rect
+	NAME=Support 4
+	DIMENSIONS=1.25,32,2.5
+	ATTACH=M+0,E+0,E+0,"Leg 3",M+0,E-0,E+0
+OBJECTEND=

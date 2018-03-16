@@ -1,0 +1,55 @@
+;
+; Night Table - with Inset Legs
+;
+; Saved: 2016-10-19 12:11:44
+;
+
+; Design object name
+OBJECTNAME=Night Table - with Inset Legs
+
+; Measurements to be displayed
+MEASURE=INCH
+
+; Individual design elements (parts)
+
+; Design element object: Top
+OBJECTSTART=Rect
+	NAME=Top
+	DIMENSIONS=16,20.875,0.75
+	MIDPOINT=0,0,12.125
+OBJECTEND=
+
+; Design element object: Shelf
+OBJECTSTART=Rect
+	NAME=Shelf
+	DIMENSIONS=16,20.875,0.75
+	ATTACH=E+0,E+0,E+0,"Leg 1",E+0,E+0,M-3
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E+0,E+0,E+0,"Top",E+0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E-0,E+0,E+0,"Top",E-0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E-0,E-0,E+0,"Top",E-0,E-0,E-0
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E+0,E-0,E+0,"Top",E+0,E-0,E-0
+OBJECTEND=

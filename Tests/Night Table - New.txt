@@ -1,0 +1,55 @@
+;
+; Night Table - New
+;
+; Saved: 2016-10-18 17:06:00
+;
+
+; Design object name
+OBJECTNAME=Night Table - New
+
+; Measurements to be displayed
+MEASURE=INCH
+
+; Individual design elements (parts)
+
+; Design element object: Top
+OBJECTSTART=Rect
+	NAME=Top
+	DIMENSIONS=16,20.875,0.75
+	MIDPOINT=0,0,12.125
+OBJECTEND=
+
+; Design element object: Shelf
+OBJECTSTART=Rect
+	NAME=Shelf
+	DIMENSIONS=16,20.875,0.75
+	MIDPOINT=0,0,-3
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E+0,E+0,E+0,"Top",E+0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=1.5,2.5,24.25
+	ATTACH=E-0,E+0,E+0,"Top",E-0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=1.5,2.5,24.25
+	MIDPOINT=-7.25,-9.1875,-0.375
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=1.5,2.5,24.25
+	MIDPOINT=7.25,-9.1875,-0.375
+OBJECTEND=

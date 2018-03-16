@@ -1,0 +1,202 @@
+;
+; Presley Drawing Table
+;
+; Saved: 2017-01-07 15:47:27
+;
+
+; Design object name
+OBJECTNAME=Presley Drawing Table
+
+; Measurements to be displayed
+MEASURE=UNDEFINED
+
+; Individual design elements (parts)
+
+; Design element object: Top Y+ (Left)
+OBJECTSTART=Rect
+	NAME=Top Y+ (Left)
+	DIMENSIONS=19,1.5,1.5
+	MIDPOINT=0,11.25,9
+OBJECTEND=
+
+; Design element object: Top Y- (Right)
+OBJECTSTART=Rect
+	NAME=Top Y- (Right)
+	DIMENSIONS=19,1.5,1.5
+	ATTACH=E-0,E+0,E-0,"Leg 3",E-0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Top X- (Back)
+OBJECTSTART=Rect
+	NAME=Top X- (Back)
+	DIMENSIONS=1.5,21,1.5
+	ATTACH=E-0,E+0,E+0,"Leg 2",E-0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Top X+ (Front)
+OBJECTSTART=Rect
+	NAME=Top X+ (Front)
+	DIMENSIONS=1.5,21,1.5
+	ATTACH=E+0,E+0,E+0,"Leg 1",E+0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=1.5,1.5,18.25
+	ATTACH=E+0,E+0,E+0,"Top Y+ (Left)",E+0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=1.5,1.5,18.25
+	ATTACH=E-0,E+0,E+0,"Top Y+ (Left)",E-0,E+0,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=1.5,1.5,18.25
+	ATTACH=E-0,E+0,E+0,"Top X- (Back)",E-0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=1.5,1.5,18.25
+	ATTACH=E+0,E-0,E+0,"Top Y- (Right)",E+0,E-0,E-0
+OBJECTEND=
+
+; Design element object: Top Surface
+OBJECTSTART=Rect
+	NAME=Top Surface
+	DIMENSIONS=19,24,0.25
+	ATTACH=E+0,E+0,E-0,"Top Y+ (Left)",E+0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Surface Stand Y+
+OBJECTSTART=Rect
+	NAME=Surface Stand Y+
+	DIMENSIONS=17.5,1.5,1.5
+	ATTACH=E-0,E+0,E+0,"Top Surface",E-0,E+1.5,E-0
+OBJECTEND=
+
+; Design element object: Surface Stand Y-
+OBJECTSTART=Rect
+	NAME=Surface Stand Y-
+	DIMENSIONS=17.5,1.5,1.5
+	ATTACH=E-0,E-0,E+0,"Top Surface",E-0,E-1.5,E-0
+OBJECTEND=
+
+; Design element object: Surface Hinge Y+
+OBJECTSTART=Rect
+	NAME=Surface Hinge Y+
+	DIMENSIONS=1.5,1.5,1.5
+	ATTACH=E+0,E+0,E+0,"Top Surface",E+0,E+1.5,E-0
+OBJECTEND=
+
+; Design element object: Surface Hinge Y-
+OBJECTSTART=Rect
+	NAME=Surface Hinge Y-
+	DIMENSIONS=1.5,1.5,1.5
+	ATTACH=E+0,E-0,E+0,"Top Surface",E+0,E-1.5,E-0
+OBJECTEND=
+
+; Design element object: Stand Hinge Y-R
+OBJECTSTART=Rect
+	NAME=Stand Hinge Y-R
+	DIMENSIONS=1.5,0.75,1.5
+	ATTACH=E-0,E-0,E+0,"Top Surface",E-0,E-1.5,E-0
+OBJECTEND=
+
+; Design element object: Surface Support X-
+OBJECTSTART=Rect
+	NAME=Surface Support X-
+	DIMENSIONS=1.5,18,1.5
+	ATTACH=E-0,E-0,E+0,"Top Surface",E-0,E-3,E-0
+OBJECTEND=
+
+; Design element object: Stand Hinge Y+L
+OBJECTSTART=Rect
+	NAME=Stand Hinge Y+L
+	DIMENSIONS=1.5,0.75,1.5
+	ATTACH=E-0,E+0,E+0,"Top Surface",E-0,E+1.5,E-0
+OBJECTEND=
+
+; Design element object: Surface Support X+
+OBJECTSTART=Rect
+	NAME=Surface Support X+
+	DIMENSIONS=1.5,18,1.5
+	ATTACH=E+0,E-0,E+0,"Top Surface",E+1.5,E-3,E-0
+OBJECTEND=
+
+; Design element object: Tray R
+OBJECTSTART=Rect
+	NAME=Tray R
+	DIMENSIONS=19,0.25,3
+	ATTACH=E-0,E-0,E+0.25,"Top Y+ (Left)",E-0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Bottom
+OBJECTSTART=Rect
+	NAME=Tray Bottom
+	DIMENSIONS=19,3,0.25
+	ATTACH=E-0,E-0,E+0,"Tray R",E-0,E-0,E-0
+OBJECTEND=
+
+; Design element object: Tray L
+OBJECTSTART=Rect
+	NAME=Tray L
+	DIMENSIONS=19,0.25,3
+	ATTACH=E-0,E+0,E-0,"Tray Bottom",E-0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Front
+OBJECTSTART=Rect
+	NAME=Tray Front
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E+0,E-0,E+0,"Tray R",E+0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Back
+OBJECTSTART=Rect
+	NAME=Tray Back
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E-0,E-0,E+0,"Tray R",E-0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Divider 1
+OBJECTSTART=Rect
+	NAME=Tray Divider 1
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E+0,E-0,E+0,"Tray R",E+3,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Divider 2
+OBJECTSTART=Rect
+	NAME=Tray Divider 2
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E+0,E-0,E+0,"Tray R",E+6,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Divider 3
+OBJECTSTART=Rect
+	NAME=Tray Divider 3
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E+0,E-0,E+0,"Tray R",E+9,E+0,E+0
+OBJECTEND=
+
+; Design element object: Tray Divider 4
+OBJECTSTART=Rect
+	NAME=Tray Divider 4
+	DIMENSIONS=0.25,2.5,3
+	ATTACH=E+0,E-0,E+0,"Tray R",E+14,E+0,E+0
+OBJECTEND=
+
+; Design element object: Stand Support X+
+OBJECTSTART=Rect
+	NAME=Stand Support X+
+	DIMENSIONS=0.75,18,1.5
+	ATTACH=E+0,E+0,E+0,"Surface Stand Y+",E+2,E+1.5,E+0
+OBJECTEND=

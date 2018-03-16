@@ -1,0 +1,104 @@
+;
+; Work Table
+;
+; Saved: 2016-11-27 14:58:06
+;
+
+; Design object name
+OBJECTNAME=Work Table
+
+; Measurements to be displayed
+MEASURE=INCH
+
+; Individual design elements (parts)
+
+; Design element object: Top Small
+OBJECTSTART=Rect
+	NAME=Top Small
+	DIMENSIONS=19.125,9.25,0.75
+	MIDPOINT=0,8,16.625
+OBJECTEND=
+
+; Design element object: Top frame 1
+OBJECTSTART=Rect
+	NAME=Top frame 1
+	DIMENSIONS=11.875,1.5,2.5
+	ATTACH=E+0,E+0,E+0,"Leg 1",E-0,E+0,E+0
+OBJECTEND=
+
+; Design element object: Top frame 2
+OBJECTSTART=Rect
+	NAME=Top frame 2
+	DIMENSIONS=1.5,15.25,2.5
+	ATTACH=E-0,E+0,E+0,"Leg 2",E-0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Top frame 3
+OBJECTSTART=Rect
+	NAME=Top frame 3
+	DIMENSIONS=11.875,1.5,2.5
+	ATTACH=E+0,E-0,E+0,"Leg 4",E-0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Top frame 4
+OBJECTSTART=Rect
+	NAME=Top frame 4
+	DIMENSIONS=1.5,15.25,2.5
+	ATTACH=E+0,E+0,E+0,"Leg 1",E+0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Leg 1
+OBJECTSTART=Rect
+	NAME=Leg 1
+	DIMENSIONS=1.5,2.5,33.25
+	ATTACH=E+0,E+0,E+0,"Top Small",E+2.125,E+2.5,E-0
+OBJECTEND=
+
+; Design element object: Leg 2
+OBJECTSTART=Rect
+	NAME=Leg 2
+	DIMENSIONS=1.5,2.5,33.25
+	ATTACH=E-0,E+0,E+0,"Top Small",E-2.125,E+2.5,E-0
+OBJECTEND=
+
+; Design element object: Leg 3
+OBJECTSTART=Rect
+	NAME=Leg 3
+	DIMENSIONS=1.5,2.5,33.25
+	ATTACH=E-0,E+0,E+0,"Top frame 2",E-0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Leg 4
+OBJECTSTART=Rect
+	NAME=Leg 4
+	DIMENSIONS=1.5,2.5,33.25
+	ATTACH=E+0,E+0,E+0,"Top frame 4",E+0,E-0,E+0
+OBJECTEND=
+
+; Design element object: Top Large
+OBJECTSTART=Rect
+	NAME=Top Large
+	DIMENSIONS=19.125,14,0.75
+	MIDPOINT=0,-5.625,16.625
+OBJECTEND=
+
+; Design element object: Bottom frame 1
+OBJECTSTART=Rect
+	NAME=Bottom frame 1
+	DIMENSIONS=11.875,1.5,2.5
+	ATTACH=E+0,E-0,E+0,"Leg 1",E-0,E-0,M-8
+OBJECTEND=
+
+; Design element object: Bottom frame 3
+OBJECTSTART=Rect
+	NAME=Bottom frame 3
+	DIMENSIONS=11.875,1.5,2.5
+	ATTACH=E+0,E+0,E+0,"Leg 4",E-0,E+0,M-8
+OBJECTEND=
+
+; Design element object: Bottom frame 2
+OBJECTSTART=Rect
+	NAME=Bottom frame 2
+	DIMENSIONS=1.5,15.25,2.5
+	ATTACH=M-0,E+0,E+0,"Bottom frame 1",M-0,E-0,E+0
+OBJECTEND=
